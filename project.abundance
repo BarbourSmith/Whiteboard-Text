@@ -151,6 +151,20 @@
                 }
             ],
             "description": "Generates Maslow gcode from the input geometry."
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.7141255605381166,
+            "y": 0.7206703910614525,
+            "uniqueID": "7f0f0cb8-c154-4995-a076-7f29dc77ed35",
+            "ioValues": [
+                {
+                    "name": "Shape 2",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
         }
     ],
     "allConnectors": [
@@ -195,6 +209,13 @@
             "ap2Primary": false,
             "ap1ID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
             "ap2ID": "efd41952-9ec6-4211-b474-97b44fd02845"
+        },
+        {
+            "ap1Name": "Gcode",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": "5ce0b8cf-758f-4b59-8f7f-d607d9acd22f",
+            "ap2ID": "7f0f0cb8-c154-4995-a076-7f29dc77ed35"
         }
     ],
     "unitsKey": "MM",
