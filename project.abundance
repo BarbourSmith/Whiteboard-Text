@@ -1,14 +1,144 @@
 {
     "atomType": "Molecule",
-    "name": "Whiteboard Text",
+    "name": "Whiteboard-Text",
     "x": 0,
     "y": 0,
     "uniqueID": "24eda204-f127-4093-8bd6-33b8a74cc47c",
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "efd41952-9ec6-4211-b474-97b44fd02845",
+            "ioValues": [],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Text",
+            "name": "Text",
+            "x": 0.28835978835978837,
+            "y": 0.43854748603351956,
+            "uniqueID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
+            "ioValues": [],
+            "description": "Creates a new text sketch.",
+            "fontFamily": "ROBOTO",
+            "selectedFontIndex": 1
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.28769841269841273,
+            "y": 0.8044692737430167,
+            "uniqueID": "f082269c-a8a1-4e9e-a6df-9265a2edc4bb",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 1000
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.6170634920634921,
+            "y": 0.8687150837988826,
+            "uniqueID": "d894318e-3348-4a65-bdf3-3a509582995e",
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": "ef65f09c-436e-476d-8bfb-1e56db5582fd"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "36335387-173d-4cdc-bd59-7cc7b3ea4270"
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.4305555555555555,
+            "y": 0.8072625698324022,
+            "uniqueID": "ef65f09c-436e-476d-8bfb-1e56db5582fd",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "f082269c-a8a1-4e9e-a6df-9265a2edc4bb"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 500
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 100
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5238095238095238,
+            "y": 0.33798882681564246,
+            "uniqueID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "36335387-173d-4cdc-bd59-7cc7b3ea4270"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 5
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
+            "ap2ID": "d894318e-3348-4a65-bdf3-3a509582995e"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
+            "ap2ID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "f082269c-a8a1-4e9e-a6df-9265a2edc4bb",
+            "ap2ID": "ef65f09c-436e-476d-8bfb-1e56db5582fd"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": "ef65f09c-436e-476d-8bfb-1e56db5582fd",
+            "ap2ID": "d894318e-3348-4a65-bdf3-3a509582995e"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
