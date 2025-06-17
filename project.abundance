@@ -93,8 +93,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5238095238095238,
-            "y": 0.33798882681564246,
+            "x": 0.5218253968253969,
+            "y": 0.34078212290502796,
             "uniqueID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
             "ioValues": [
                 {
@@ -103,10 +103,40 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 5
+                    "ioValue": 4
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Gcode",
+            "name": "Gcode",
+            "x": 0.6951058201058201,
+            "y": 0.5083798882681565,
+            "uniqueID": "5ce0b8cf-758f-4b59-8f7f-d607d9acd22f",
+            "ioValues": [
+                {
+                    "name": "Geometry",
+                    "ioValue": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7"
+                },
+                {
+                    "name": "Tool Size",
+                    "ioValue": 0.1
+                },
+                {
+                    "name": "Passes",
+                    "ioValue": 1
+                },
+                {
+                    "name": "Speed",
+                    "ioValue": 1500
+                },
+                {
+                    "name": "Cut Through",
+                    "ioValue": 1
+                }
+            ],
+            "description": "Generates Maslow gcode from the input geometry."
         }
     ],
     "allConnectors": [
@@ -137,6 +167,13 @@
             "ap2Primary": false,
             "ap1ID": "ef65f09c-436e-476d-8bfb-1e56db5582fd",
             "ap2ID": "d894318e-3348-4a65-bdf3-3a509582995e"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Geometry",
+            "ap2Primary": false,
+            "ap1ID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
+            "ap2ID": "5ce0b8cf-758f-4b59-8f7f-d607d9acd22f"
         }
     ],
     "unitsKey": "MM",
