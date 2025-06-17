@@ -14,19 +14,24 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "efd41952-9ec6-4211-b474-97b44fd02845",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "36335387-173d-4cdc-bd59-7cc7b3ea4270"
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Text",
             "name": "Text",
-            "x": 0.28835978835978837,
-            "y": 0.43854748603351956,
+            "x": 0.2914798206278027,
+            "y": 0.4441340782122905,
             "uniqueID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
             "ioValues": [],
             "description": "Creates a new text sketch.",
-            "fontFamily": "ROBOTO",
-            "selectedFontIndex": 1
+            "fontFamily": "ANTON",
+            "selectedFontIndex": 0
         },
         {
             "atomType": "Rectangle",
@@ -93,8 +98,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5218253968253969,
-            "y": 0.34078212290502796,
+            "x": 0.4271300448430493,
+            "y": 0.22625698324022345,
             "uniqueID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
             "ioValues": [
                 {
@@ -111,8 +116,8 @@
         {
             "atomType": "Gcode",
             "name": "Gcode",
-            "x": 0.6951058201058201,
-            "y": 0.5083798882681565,
+            "x": 0.6917040358744395,
+            "y": 0.25418994413407825,
             "uniqueID": "5ce0b8cf-758f-4b59-8f7f-d607d9acd22f",
             "ioValues": [
                 {
@@ -153,6 +158,13 @@
             "ap2Primary": true,
             "ap1ID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
             "ap2ID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
+            "ap2ID": "efd41952-9ec6-4211-b474-97b44fd02845"
         },
         {
             "ap1Name": "geometry",
