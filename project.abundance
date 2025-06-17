@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "36335387-173d-4cdc-bd59-7cc7b3ea4270"
+                    "ioValue": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -25,10 +25,19 @@
         {
             "atomType": "Text",
             "name": "Text",
-            "x": 0.2914798206278027,
-            "y": 0.4441340782122905,
+            "x": 0.2857142857142857,
+            "y": 0.4776536312849162,
             "uniqueID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Font Size",
+                    "ioValue": 200
+                },
+                {
+                    "name": "Text",
+                    "ioValue": "Test Text"
+                }
+            ],
             "description": "Creates a new text sketch.",
             "fontFamily": "ANTON",
             "selectedFontIndex": 0
@@ -98,8 +107,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.4271300448430493,
-            "y": 0.22625698324022345,
+            "x": 0.47354497354497355,
+            "y": 0.33519553072625696,
             "uniqueID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
             "ioValues": [
                 {
@@ -161,13 +170,6 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": "36335387-173d-4cdc-bd59-7cc7b3ea4270",
-            "ap2ID": "efd41952-9ec6-4211-b474-97b44fd02845"
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": "f082269c-a8a1-4e9e-a6df-9265a2edc4bb",
@@ -186,6 +188,13 @@
             "ap2Primary": false,
             "ap1ID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
             "ap2ID": "5ce0b8cf-758f-4b59-8f7f-d607d9acd22f"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "58e95909-2f49-47b5-82ba-3b4ac5b1d4e7",
+            "ap2ID": "efd41952-9ec6-4211-b474-97b44fd02845"
         }
     ],
     "unitsKey": "MM",
